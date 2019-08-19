@@ -1,8 +1,6 @@
 cleaning-notification-bot
 =========
 
-Overview
-
 ## Description
 
 - Get cleaning duty data from Google Spreadsheet as RESTful API and notify Slack
@@ -31,10 +29,10 @@ $ git clone git@github.com:myoshioka/cleaning-notification-bot.git
 ```
 
 - Set env.
- - Set SheetDB-API and AWS credential.
+  - Set SheetDB-API and AWS credential.
 
 ```bash
-$ cd python-injector-sample
+$ cd cleaning-notification-bot
 $ cp .env.local .env
 ```
 
@@ -53,8 +51,7 @@ $ docker exec <docker-image> sls deploy -v --stage dev
 - Test
 
 ```bash
-$ docker exec <docker-image> sls deploy -v --stage dev
-docker exec <docker-image> sls invoke local -f notification -d '{"today":"20190820"}'
+$ docker exec <docker-image> sls invoke local -f notification -d '{"today":"20190820"}'
 ```
 
 ## Author
