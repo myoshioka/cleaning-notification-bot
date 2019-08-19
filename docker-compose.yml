@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  workspace:
+    build: .
+    volumes:
+      - .:/code
+    tty: true
+    environment:
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      SPREADSHEET_API_BASE_URL: ${SPREADSHEET_API_BASE_URL}
+      SPREADSHEET_API_KEY: ${SPREADSHEET_API_KEY}
+      AUTH_ID: ${AUTH_ID}
+      AUTH_PASS: ${AUTH_PASS}
+      WEB_HOOK_URL: ${WEB_HOOK_URL}
+      G_SPREADSHEET: ${G_SPREADSHEET}
+      
+
+
