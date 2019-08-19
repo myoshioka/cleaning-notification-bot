@@ -35,8 +35,25 @@ $ git clone git@github.com:myoshioka/cleaning-notification-bot.git
 $ cd cleaning-notification-bot
 $ cp .env.local .env
 ```
+```env
+SPREADSHEET_API_BASE_URL=https://sheetdb.io/api/v1/
+# SheetDB-API key
+SPREADSHEET_API_KEY=
+# SheetDB-API Basic authentication ID
+AUTH_ID=
+# SheetDB-API Basic authentication password
+AUTH_PASS=
+# Slack incoming webhooks URL
+WEB_HOOK_URL=
+# spreadsheet URL
+G_SPREADSHEET=
+# AWS credential
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
 
-- Launch Docker and deploy.
+```
+
+- Launch Docker
 
 ```bash
 $ docker-compose up -d
